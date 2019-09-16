@@ -1,7 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall
 
-proj3: BusCompany.o Route.o driver.cpp
+compile: BusCompany.o Route.o driver.cpp
 	$(CXX) $(CXXFLAGS) Route.o BusCompany.o driver.cpp -o optimize
 
 BusCompany.o: Route.o BusCompany.cpp BusCompany.h
